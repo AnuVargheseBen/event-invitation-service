@@ -1,8 +1,9 @@
 import { Router } from 'express';
 
-import {save , getDocument } from '../controllers/event';
+import {save , getDocuments, getDocument } from '../controllers/event';
 const router = Router();
 
 router.post('/',save);
-router.get('/',getDocument);
+router.get('/',getDocuments);
+router.get('/:id',getDocument);
 export default router;

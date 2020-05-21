@@ -6,5 +6,4 @@ const eventSchema = new mongoose.Schema({
 });
 
 const eventModel = mongoose.model('events', eventSchema);
-var eventData = new eventModel({ name: 'Wedding Event', description: 'Wedding Event of Anju' });
 export default eventModel;
